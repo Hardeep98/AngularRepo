@@ -6,23 +6,29 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { UpdateAdminComponent } from './update-admin/update-admin.component';
+
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { UpdateMovieComponent } from './update-movie/update-movie.component';
-import { NavComponent } from './nav/nav.component';
+
 import { LogoutComponent } from './logout/logout.component';
+import { AddMovieComponent } from './add-movie/add-movie.component';
+import { AllMoviesComponent } from './all-movies/all-movies.component';
+import { CanceltaionRequestComponent } from './canceltaion-request/canceltaion-request.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UpdateAdminComponent,
+
     UserDetailComponent,
     MovieDetailComponent,
     UpdateMovieComponent,
-    NavComponent,
-    LogoutComponent
+ 
+    LogoutComponent,
+    AddMovieComponent,
+    AllMoviesComponent,
+    CanceltaionRequestComponent
   ],
   imports: [
     BrowserModule,

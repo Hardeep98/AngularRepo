@@ -9,7 +9,7 @@ export class AuthenticationService {
   
  authenticate(username,password)
   {
-    if(username === "sreshti" && password==="1234")
+    if(username === "admin" && password==="1234")
     {
       sessionStorage.setItem('username',username)
       return true;

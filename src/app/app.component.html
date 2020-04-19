@@ -1,40 +1,41 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+<nav id="nav" class="navbar navbar-expand-sm navbar-dark bg-dark ">
     <!-- Links -->
     <ul class="navbar-nav">
-      <li class="nav-item">
-          <a *ngIf="loginService.isUserLoggedIn()" routerLink="products" class="nav-link"
-           routerLinkActive="active">Product List</a>
-      </li>
-      <li class="nav-item">
-          <a *ngIf="loginService.isUserLoggedIn()" routerLink="add" class="nav-link"
-           routerLinkActive="active">Add Product</a>
-      </li>
-  
-      <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login"
-      class="nav-link">Login</a></li>
-  
-      <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/register"
-        class="nav-link">Register</a></li>
-  
-        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout"
-          class="nav-link">Logout</a></li>
-  
+        <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="/allmovie" class="nav-link" routerLinkActive="active">All Movie</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="/addMovies" class="nav-link" routerLinkActive="active">Add Movie</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="/user" class="nav-link" routerLinkActive="active">View All Users</a>
+        </li>
+
+        <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/cancelTicket" class="nav-link">Cancel Movie Request </a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+        <!-- <ul>cancelTicket
+            <!--Routing to diff compnent
+        <li><a routerLink="/User">User-detail</a></li>
+        <li><a routerLink="/addMovie">Update-Movie</a></li>
+        <li><a routerLink="/Logout">Logout</a></li>
+ -->
     </ul>
-  </nav>
-  <div class="container">
+</nav>
+
+<div class="container">
     <br>
     <h2 style="text-align: center;">{{title}}</h2>
-    <hr> 
-     <div class="card">
-       <div class="card-body">
-         <router-outlet></router-outlet>
-       </div>
-     </div>
-   </div>
-   
-    <footer class="footer">
-      <div class="container">
-          <span>All Rights Reserved 2020 @Techno</span>
-      </div>
-    </footer>
-    
+    <hr>
+    <div class="card">
+        <div class="card-body">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <span>All Rights Reserved 2020 @CineTik</span>
+    </div>
+</footer>

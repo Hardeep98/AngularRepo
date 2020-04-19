@@ -10,5 +10,5 @@ export class AppComponent {
 
   constructor(public loginService:AuthenticationService){ }
   
-  title = 'Movie-Booking-System';
+  title = 'Movie-Booking-System Admin Panal';
 }
